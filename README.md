@@ -5,7 +5,7 @@ Docker image for credhub (include a docker-compose file to run with uaa).
 ## Run without UAA
 
 ```bash
-docker run -d -p 127.0.0.1:9000:9000 orangeopensource/credhub:latest
+docker run -d -p 127.0.0.1:9000:9000 ncja/credhub:latest
 ```
 
 ## Run with UAA
@@ -24,5 +24,5 @@ Clone this repo and run `docker-compose up -d` inside folder [/docker-compose](/
 You can now connect to credhub with this command:
 
 ```bash
-credhub-cli login -s https://localhost:9000 -u credhub -p password --skip-tls-validation
+credhub login -s https://localhost:9000 -u credhub -p password --skip-tls-validation
 ```
