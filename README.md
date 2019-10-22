@@ -26,3 +26,13 @@ You can now connect to credhub with this command:
 ```bash
 credhub login -s https://localhost:9000 -u credhub -p password --skip-tls-validation
 ```
+
+## Initialize submodules
+Before building the docker image the credhub code needs to be pulled in as a git submodule.
+
+Initialize submodules and pull in code.
+```bash
+git submodule init
+git submodule update
+```
+
